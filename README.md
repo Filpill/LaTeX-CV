@@ -1,2 +1,2 @@
 # LaTeX
-Maintaining LaTeX Documents
+Maintaining LaTeX Documents - (Mainly my CV)
