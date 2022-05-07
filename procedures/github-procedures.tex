@@ -12,6 +12,7 @@
 \usepackage{xhfill}
 \usepackage{multicol}
 \usepackage{float}
+\usepackage{url}
 \usepackage[hidelinks]{hyperref}
 \usepackage[margin=0.5in]{geometry}
 \usepackage{graphicx}
@@ -67,11 +68,11 @@ The purpose of this document is provide guidance for basic github usage: pushing
 \begin{figure}[H]
 \begin{tikzpicture}[node distance = 1.5cm,every node/.style={scale=0.8}]
 
-	\node (start) [startstop] {Go to your dot ssh directory ~/.ssh/id\_ssh};
+	\node (start) [startstop] {Go to your dot ssh directory \url{~}/.ssh/id\_ssh};
 	\node (keygen) [process,below of=start] {Type this command to generate an SSH Keypair: ssh-keygen -t rsa 4096 -C "youremail@blahblah.com"};
 	\node (skip) [process,below of=keygen] {Name your SSH files/keys, and Press enter twice to skip password prompts};
 	\node (pub) [process,below of=skip] {Copy the public key of the two that were generated and paste into the Github settings where you are saving your public keys};
-	\node (activate) [startstop,below of=pub] {To activate the key pair, go to your local github repo directory and type: .ssh/id\_rsa/name\_of\_your\_private\_key};
+	\node (activate) [startstop,below of=pub] {To activate the key pair, go to your local github repo directory and type: \url{~}/.ssh/id\_rsa/name\_of\_your\_private\_key};
 
 	\draw [arrow] (start) -- (keygen){};
 	\draw [arrow] (keygen) -- (skip) {};
