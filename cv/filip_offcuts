@@ -1,0 +1,84 @@
+%EASYJET
+    %\item Connecting safety reporting data with operational flight data using Tableau relationships to apply statistical normalization.
+	%\item Creating end-to-end data pipelines: data ingestion with Pyodbc into DataFrames for data analytics in Pandas.
+	%\item Automating PowerPoints' with python-pptx refreshing over 12 presentation packs (450 tailor-made slides) in under 1 minute.
+    %\item Connecting safety reporting data with operational flight data using Tableau relationships to apply statistical normalization.
+	%\item Creating Tableau dashboards which query from multiple SQL database systems and consolidate safety performance indicators.
+
+%TUI
+    %\item Leading safety discussions supported by my data analysis and have driven discussions to implement safer maintenance practices of historically high risk aircraft maintenance occurrences.
+	%\item Leading discussions in the Engineering Safety Action Group, and presenting data to drive risk mitigation actions.
+	%\item Designing occurrence reporting process flows using Visio and in compliance with airline safety regulations.
+    %\item Harnessing Pandas and Matplotlib to create data-sets to monitor E\&M reporting metrics within the airlines safety system.
+
+%\subsection*{\textbf{Booker Gliding Club – Cadet (Volunteer)}\hfill Feb 2013 - Jul 2018}
+%\begin{itemize}[noitemsep]
+%
+%	\item Supporting gliding operation at airfield by minimising flying aircraft downtime and ensuring efficient ground movements.
+%	\item Performing launch point preparation, flight log administration, glider launching and retrieval.
+%
+%\end{itemize}
+
+%	\item  Porting legacy project website written in manual HTML and CSS to Hugo framework and maintain pages with markdown.
+
+%\subsection*{\textbf{Python Project - 2D Unsteady Heat Transfer Simulation }\hfill  Jun 2021 – Jul 2021}
+%
+%\begin{itemize}[noitemsep]
+%    \item Discretized heat equation, generalised the mesh for any dimensions and resolved using successive over relaxation solver.
+%    \item Evaluated an approximate solution of temperatures on the grid at each time step using the finite differencing method.
+%    \item Captured animation of temperature progression over mesh using function in matplotlib and stored result as gif image.
+%
+%\end{itemize}
+
+%\subsection*{\textbf{Arduino Project - 3D Printed Bluetooth Car } \hfill  Apr 2020 – Jun 2021}
+%\begin{itemize}[noitemsep]
+%	\item  Designed car with Solidworks, sliced STL's using Cura, printed parts on Ender 3 printer and assembled hand.
+%	\item  Created Bluetooth serial communications system in Arduino and implemented GUI interface between PC and Arduino.
+%
+%\end{itemize}
+%
+%\subsection*{\textbf{UAV Design Project - Payload Challenge - Project Engineer } \hfill  Oct 2017 – Jul 2018}
+
+%\begin{itemize}[noitemsep]
+%	\item Defined system requirements and aircraft sizing in addition to coordinating aero/structures analysis with detailed design.
+% 	\item Optimised aircraft configuration at conceptual design stage using Monte Carlo style simulation to maximise mission score.
+%	\item Coordinated manufacture processes of UAV aircraft staged out into sub-systems and supplemented with building procedures.
+%
+%\end{itemize}
+
+%\subsection*{\textbf{Aerodynamics Dissertation} \hfill  Sep 2016 – Jun 2017}
+%
+%
+%\begin{itemize}[noitemsep]
+%    \item \textbf{Experimental Study of Flow Separation on Forward Facing Step - PIV Measurements}
+%	\item Designing test apparatus - enabling airflow illumination in preparation for wind tunnel testing.
+%	\item MATLAB - Cross correlation of images, visualised velocity field and studied boundary layer.
+%\end{itemize}
+
+%\section*{Skills}
+%\subsection*{Technical Skills}
+%\begin{itemize}[noitemsep]
+%    \item \textbf{Software:} Artix Linux, AMOS,  AutoCAD, Cura, MS SQL Server, SolidWorks,Tableau, XFLR5
+%    \item \textbf{Documentation:}  Microsoft Office (Word/Excel/Powerpoint/Visio), LaTeX, Markdown, Vim
+%    \item \textbf{Programming:}  Arduino, GitHub, HTML/CSS, Hugo, MATLAB, Python, SQL, VBA
+%    \item \textbf{Other:} 3D Printing, UK Driving License, BGA Bronze Badge,HF Investigator
+%    \item \textbf{Languages:} English(Fluent), Croatian(Native), French(Basic)
+%\end{itemize}
+
+%\item \textbf{Relevant Modules:} Mathematics, Computing, and Systems Engineering
+
+% \begin{itemize}[noitemsep]
+% Advanced Aerodynamics and Propulsion
+% Airworthiness and Maintenance
+% Flight Dynamics
+% Structural Dynamics and Aero-elasticity
+% Systems Engineering
+% UAV Design
+% Engineering Management
+% Fluid Mechanics
+% Gas Turbine Engineering
+% Mathematics and Computing
+% Structural Analysis/Finite Element Method
+% Thermodynamics
+% \end{itemize}
+
