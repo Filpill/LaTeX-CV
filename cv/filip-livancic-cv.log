@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.2.24)  19 MAR 2024 02:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.2.24)  3 APR 2024 23:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -565,11 +565,11 @@ Package rerunfilecheck Info: File `filip-livancic-cv.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13299 strings out of 477942
- 212532 string characters out of 5838997
+ 13295 strings out of 477942
+ 212504 string characters out of 5838997
  1873388 words of memory out of 5000000
  33318 multiletter control sequences out of 15000+600000
- 514680 words of font info for 56 fonts, out of 8000000 for 9000
+ 514578 words of font info for 54 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  63i,5n,67p,1045b,451s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/filpill/.texlive/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk
@@ -577,7 +577,7 @@ Here is how much of TeX's memory you used:
 exmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmtt10.pfb>
-Output written on filip-livancic-cv.pdf (1 page, 74863 bytes).
+Output written on filip-livancic-cv.pdf (1 page, 74880 bytes).
 PDF statistics:
  43 PDF objects out of 1000 (max. 8388607)
  30 compressed objects within 1 object stream
