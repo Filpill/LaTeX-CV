@@ -15,6 +15,8 @@
 \usepackage{tabularx}
 \usepackage[hidelinks]{hyperref}
 \usepackage[margin=0.25in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[bitstream-charter]{mathdesign}
 
 %Section Formatting
 % \titlespacing{\section}{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
@@ -24,7 +26,7 @@
     {\titlerule[1.0pt]}
 
 \titleformat{\subsection}
-    {\normalfont\bfseries}{\thesection}{1em}{}
+    {\normalsize\normalfont\bfseries}{\thesection}{1em}{}
     % [{\titlerule[0.8pt]}]
 
 \setlength{\parindent}{0pt}%
@@ -49,14 +51,13 @@
 \section*{Skills}
 \subsection*{Technical Skills}
 \begin{itemize}[noitemsep]
-	\item \textbf{Data Analytics:} \hspace{1mm}  SQL, Python, Tableau, Excel
-    \item \textbf{Cloud:} \hspace{17mm} GCP - Google Cloud
-	\item \textbf{SQL Database:} \hspace{2.5mm} BigQuery, Microsoft SQL Server, PostgreSQL
-    \item \textbf{Programming:} \hspace{3.3mm} Python(pandas, numpy, matplotlib, xlsxwriter, python-pptx), Shell(bash/zsh)
-	\item \textbf{Command Line:} \hspace{0.5mm} Debian/Arch Linux, docker, gcloud(bq, gsutil), git
-    \item \textbf{Documentation:} \hspace{0.5mm} Microsoft Office, Markdown, LaTeX
-    \item \textbf{Miscellaneous:} \hspace{3.3mm} Hugo(HTML/CSS), SolidWorks, Vim
-	\item \textbf{Languages:} \hspace{9.3mm} English(Native), Croatian(Native), French(Basic)
+    \item \textbf{Cloud:} \hspace{16.9mm} GCP - Google Cloud
+    \item \textbf{Data Analytics:} \hspace{3.5mm}  SQL |  Python | Tableau |  Excel
+	\item \textbf{SQL Database:} \hspace{4.4mm} BigQuery |  Microsoft SQL Server |  PostgreSQL
+    \item \textbf{Python Libraries:} \hspace{0.4mm} pandas | numpy | matplotlib | xlsxwriter | python-pptx
+    \item \textbf{Command Line:} \hspace{2.5mm} Shell [bash, zsh] | git |  gcloud [bq, gsutil] | docker
+    \item \textbf{Other Tools:} \hspace{8mm}  Linux [Arch, Debian] | Microsoft Office |  LaTeX  | Hugo | SolidWorks | Vim
+	\item \textbf{Languages:} \hspace{9.5mm} English(Native) |  Croatian(Native) |  French(Basic)
 \end{itemize}
 
 %Work Experience
@@ -66,7 +67,7 @@
     \item Crafting SQL stored procedures, adept at consolidating diverse data sources into the presentation layer. Employed SQL optimisation techniques to: minimize table scan size, reduce data shuffling and improve query execution times.
     \item Collaborating closely with business stakeholders to gain a comprehensive understanding of Sky's Broadband product offerings and leveraging Tableau reporting solutions to analyse and track the broadband customer base.
     \item Migrating reporting solutions from legacy data systems onto BigQuery and Tableau infrastructure in addition to adding enhancements. Data quality is thoroughly tested to maintain consistency with previous reporting solutions.
-    \item Developing CI/CD system for SQL code development in data visualisation department using git and Google CLI tools. 
+    \item Developing SQL versioning system using INFORMATION\_SCHEMA and running daily batch to detect new or updated Stored Procedures and storing changes in table as Type 2 Slowly Changed Dimensions.
 \end{itemize}
 
 \subsection*{\textbf{easyJet - Safety Data Analyst} \hfill  Nov 2021 - Nov 2022}
