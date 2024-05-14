@@ -1,3 +1,8 @@
+%SKY
+%\item Migrating reporting solutions from legacy data systems onto BigQuery and Tableau infrastructure in addition to adding enhancements. Data quality is thoroughly tested to maintain consistency with previous reporting solutions.
+%\item Developing SQL versioning system using INFORMATION\_SCHEMA and running daily batch to detect new or updated Stored Procedures in production environment and storing changes in table as Type 2 Slowly Changed Dimensions.
+
+
 %EASYJET
     %\item Connecting safety reporting data with operational flight data using Tableau relationships to apply statistical normalization.
 	%\item Creating end-to-end data pipelines: data ingestion with Pyodbc into DataFrames for data analytics in Pandas.
