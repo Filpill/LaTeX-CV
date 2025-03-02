@@ -28,7 +28,9 @@
 
 \titleformat{\subsection}
     {\normalsize\normalfont\bfseries}{\thesection}{1em}{}
-    % [{\titlerule[0.8pt]}]
+
+\titleformat{\subsubsection}
+    {\normalsize\normalfont}{\thesection}{1em}{}
 
 \setlength{\parindent}{0pt}%
 
@@ -49,40 +51,48 @@
 \end{itemize}
 
 \section*{Skills}
-\begin{itemize}[noitemsep]
-    \item[] \faCloud \hspace{1mm} \textbf{Cloud:} \hspace{16.7mm} GCP - Google Cloud
-    \item[] \faTachometer \hspace{1mm} \textbf{Data Analytics:} \hspace{3.5mm}  SQL |  Python | Tableau |  Excel
-    \item[] \faDatabase \hspace{1mm} \textbf{SQL Database:} \hspace{4.4mm} BigQuery |  Microsoft SQL Server |  PostgreSQL
+\begin{itemize}
+    \item[] \faCloud \hspace{1mm} \textbf{Cloud:} \hspace{16.7mm} GCP(GCS, Compute Engine, BigQuery, Log Router, Pub/Sub)
+    \item[] \faTachometer \hspace{1mm} \textbf{Data Tools:} \hspace{9.5mm}  SQL | Python | Tableau | Excel | dbt | GA4 Analytics | Airflow
     \item[] \faCog \hspace{1mm} \textbf{Python Libraries:} \hspace{0.4mm} pandas | numpy | matplotlib | xlsxwriter | python-pptx | requests | cartopy
     \item[] \faTerminal \hspace{1mm} \textbf{Command Line:} \hspace{2.5mm} Shell(bash, zsh) | git |  gcloud(bq, gsutil) | docker
-    \item[] \faWrench \hspace{1mm} \textbf{Other Tools:} \hspace{8mm}  Linux(Arch, Debian) | Microsoft Office |  LaTeX  | Hugo | SolidWorks | Vim
+    \item[] \faWrench \hspace{1mm} \textbf{Other Tools:} \hspace{8mm}  Linux(Arch, Debian) |  LaTeX  | Hugo | SolidWorks | Vim
     \item[] \faLanguage \hspace{1mm} \textbf{Languages:} \hspace{9.5mm} English(Native) |  Croatian(Native)
 \end{itemize}
 
 %Work Experience
 \section*{Work Experience}
 
-\subsection*{\textbf{Fifty Five - Senior Data Engineer} \hfill  Sept 2024 - Present}
+\subsection*{\textbf{Fifty Five - Senior Data Engineer} \hfill  Sept 2024 - Mar 2025}
+\begin{itemize}[noitemsep]
+    \item Planning and delivering pipeline designs to spec and to schedule for clients such as: Hilton, Dyson, Cigna, and Bayer.
+    \item Maintaining dbt models analytic pipelines, monitoring pipeline health in Airflow and array of Looker Dashboards.
+    \item Implementing ETL pipelines: ingesting via SFTP and API's into GCS/BigQuery and monitoring health with cloud logging.
+    \item Troubleshooting pipelines failures to determine causal factors, applying remedial actions and communicating back to clients.
+    \item Mentoring data consultants with respect to BigQuery to apply data transformations in order to derive web traffic channel attribution.
+    \item Utilising CI/CD processes with Git and Terraform in order to rapidly deploy cloud resources and changes into production.
+\end{itemize}
 
 \subsection*{\textbf{Sky - Data Visualisation Engineer} \hfill  Dec 2022 - Sept 2024}
 \begin{itemize}[noitemsep]
-    \item Juggling multiple projects, business stakeholders and priorities to extract the most valuable insights about Sky's broadband customers through Tableau dashboards.
-    \item Consolidating diverse data sources loaded into BigQuery through SQL stored procedures running downstream batch ETL and enabling reporting in Tableau.
-    \item Exercising optimisation techniques to: compress storage volume, reduce table scan size, minimise data shuffle and improve query execution times.
-    \item Migrating numerous legacy datasets onto BigQuery and embedding data quality testing to ensure consistency during development when piped into Tableau BI reporting.
+    \item Juggling projects, stakeholders and priorities to extract insights about Sky's broadband customers through Tableau dashboarding.
+    \item Consolidating data sources using BigQuery SQL stored procedures running downstream batch ETL for Tableau enablement.
+    \item Migrating legacy datasets onto BigQuery and embedding data quality testing to ensure consistency during development.
+    \item Applying BigQuery SQL optimisations reduce redundant data processing and lower slot time occupation.
 \end{itemize}
 
 \subsection*{\textbf{easyJet - Safety Data Analyst} \hfill  Nov 2021 - Nov 2022}
 \begin{itemize}[noitemsep]
-    \item Forged strong relationships with safety experts and gathered requirements to create interactive Tableau dashboards which helped increase effectiveness of safety management system by highlighting operational risks trending upwards.
-    \item Created comprehensive safety data reporting pipeline in Python and replaced manual Excel-based data transformations with 15 automated data reporting solutions with the xlsxwriter library to save over 30 man-hours of effort per month.
-    \item Feeding Python-based data pipeline into 12 monthly automated PowerPoint's with the python-pptx library and saving department over 40 man-hours per month of presentation building.
+    \item Forged strong relationships with safety experts and collaborated to create Tableau dashboards for monitoring safety statistics.
+    \item Replaced Excel tasks with comprehensive reporting pipeline in Python; over 15 xlsxwriter reports to save 30 man-hours/month.
+    \item Templating 12 monthly PowerPoint's with the python-pptx library and saving 40 man-hours/month of presentation prep.
 \end{itemize}
 
 \subsection*{\textbf{TUI Airways - Engineering Safety Analyst} \hfill  Aug 2018 - Sept 2021}
 \begin{itemize}[noitemsep]
-	\item Built Excel dashboard to maintain visibility of safety performance for the engineering department; maintaining visibility of active high risk safety occurrences and monitoring historical trends of various airworthiness/maintenance incidents.
-	\item Facilitated investigation of over 1000 engineering occurrences to generate effective root cause analysis, and my data analysis has led to significant risk reduction of trending events in engineering through greatly improved safety barriers.
+	\item Excel dashboarding to monitor active high risk safety occurrences and trends of maintenance incidents across engineering.
+	\item Investigated over 1000 engineering occurrences, generating root cause analysis and instituting preventative measures.
+    \item Regularly chairing the monthly Engineering Safety Action Group to communicate and manage top risks with senior management.
 \end{itemize}
 
 \section*{Personal Blog and Projects}
@@ -94,17 +104,9 @@
 \end{itemize}
 
 \section*{Education}
-\subsection*{\textbf {City, University of London - Aeronautical Engineering (MEng)}  \hfill Oct 2014 - Jul 2018}\FloatBarrier
-\begin{itemize}[noitemsep]
-	\item \textbf{Overall grade:} First Class Honours %70.3%
-    \item \textbf{Scholarships:} \hspace{0mm} George Daniels Scholarship - Sept 2015
-\end{itemize}
+\subsubsection*{\textbf {City, University of London | Aeronautical Engineering (MEng)} | Grade: First Class Honours   \hfill \textbf{Oct 2014 - Jul 2018}}\FloatBarrier
 
-\subsection*{\textbf{St Gregory’s RC Science College} \hfill  Sep 2007 – Jul 2014}
-\begin{itemize}[noitemsep]
-    \item \textbf{A Level's:} Physics (A), Mathematics (B), Further Mathematics (B), Chemistry (C)
-    \item \textbf{GCSE’s:} \hspace{1.2mm} 11 GCSE’s (A*-C) Including English and Math
-\end{itemize}
+\subsubsection*{\textbf{St Gregory’s RC Science College} | A Level's: Physics (A), Maths (B), Further Maths (B), Chemistry (C)  \hfill  \textbf{Sep 2007 – Jul 2014}}
 
 \pagenumbering{gobble}
 \date{}
