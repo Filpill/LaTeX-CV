@@ -1,0 +1,129 @@
+\documentclass[a4paper, 9pt]{article}
+
+\usepackage[english]{babel}
+\usepackage{titlesec}
+\usepackage{blindtext}
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{placeins}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{xhfill}
+\usepackage{multicol}
+\usepackage{dirtytalk}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\usepackage[hidelinks]{hyperref}
+
+\usepackage[
+    margin=0.25in
+]{geometry}
+
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+
+%Section Formatting
+\titleformat{\section}
+    {\Large\bfseries}{\filright\footnotesize\enspace SECTION\thesection\enspace}{12pt}
+    {\titlerule[1.0pt]\vspace{3mm}}
+
+\titleformat{\subsection}
+    {\normalsize\normalfont\bfseries}{\thesection}{1em}{}
+
+\titleformat{\subsubsection}
+    {\normalsize\normalfont}{\thesection}{1em}{}
+
+\setlength{\parindent}{0pt}%
+
+\pagenumbering{gobble}
+\date{}
+
+\begin{document}
+\vspace*{-4.5mm}
+
+\section*{Filip Livancic}
+\vspace{-2.5mm}
+
+\begin{itemize}[itemsep=-0.2em]
+    \item[] \faMapO \hspace{1mm} \textbf{Location:} \hspace{0.2mm}East Finchley, London 
+        \hspace{41.5mm} \faGithub \hspace{2mm} \textbf{Github:} \hspace{2,5mm} \url{https://github.com/Filpill/}
+    \item[] \faEnvelope \hspace{1.6mm} \textbf{Email:} \hspace{3.5mm} \href{mailto:filiplivancic@gmail.com}{filiplivancic@gmail.com} 
+        \hspace{38mm} \faGlobe \hspace{2mm} \textbf{Website:} \hspace{1.2mm} \url{https://filiplivancic.com/}
+    \item[] \faPhone \hspace{2.2mm} \textbf{Mobile:} \hspace{1.5mm} +44 740 346 7511
+        \hspace{46mm} \faLinkedinSquare \hspace{2mm} \textbf{LinkedIn:} \hspace{0.5mm}\url{linkedin.com/in/filip-livancic/}
+\end{itemize}
+
+\section*{Skills}
+\vspace{-2.5mm}
+
+\begin{itemize}[itemsep=0.0em]
+    \item[] \faCloud \hspace{1mm} \textbf{Cloud:} \hspace{8.7mm} GCP(BigQuery, GCS, Compute Engine, Cloud Scheduler, Cloud Run, Log Router, Pub/Sub, Artifact Registry)
+    \item[] \faBarChart \hspace{1mm} \textbf{Data:} \hspace{10.5mm}  SQL | Python | Tableau | Excel | dbt | GA4 Analytics | Airflow | Dash
+    \item[] \faCog \hspace{1mm} \textbf{Python:} \hspace{7.6mm} pandas | numpy | matplotlib | plotly | Dash | xlsxwriter | python-pptx | requests | cartopy
+    \item[] \faTerminal \hspace{1mm} \textbf{CLI:} \hspace{13.6mm} Shell(bash, zsh) | git |  gcloud(bq, gsutil) | docker | terraform
+    \item[] \faWrench \hspace{1mm} \textbf{Other Tools:} \hspace{0.0mm}  Linux(Arch, Debian) | Virtual Machines |  LaTeX  | Hugo | SolidWorks | Vim
+    \item[] \faLanguage \hspace{1mm} \textbf{Languages:} \hspace{1.5mm} English(Native) |  Croatian(Native)
+\end{itemize}
+
+%Work Experience
+\section*{Work Experience}
+
+\subsection*{\textbf{Fifty Five - Senior Data Engineer} \hfill  Sept 2024 - Mar 2025}
+\begin{itemize}[noitemsep]
+    \item Planning and delivering pipeline designs to spec and to schedule for clients such as: Hilton, Dyson, Cigna, and Bayer.
+    \item Maintaining dbt models analytic pipelines, monitoring pipeline health in Airflow and array of Looker Dashboards.
+    \item Implementing ETL pipelines: ingesting via SFTP and API's into GCS/BigQuery and monitoring health with cloud logging.
+    \item Troubleshooting pipelines failures to determine causal factors, applying remedial actions and communicating back to clients.
+    \item Mentoring data consultants with respect to BigQuery data transformations in order to derive web traffic channel attribution.
+    \item Utilising CI/CD processes with Git and Terraform in order to rapidly deploy cloud resources and changes into production.
+\end{itemize}
+
+\subsection*{\textbf{Sky - Data Visualisation Engineer} \hfill  Dec 2022 - Sept 2024}
+\begin{itemize}[noitemsep]
+    \item Juggling projects, stakeholders and priorities to extract insights about Sky's broadband customers through Tableau.
+    \item Consolidating data sources using BigQuery SQL stored procedures running downstream batch ETL for Tableau enablement.
+    \item Migrating legacy datasets onto BigQuery and embedding data quality testing to ensure consistency during development.
+    \item Applying BigQuery SQL optimisations reduce redundant data processing and lower slot time occupation.
+\end{itemize}
+
+\subsection*{\textbf{easyJet - Safety Data Analyst} \hfill  Nov 2021 - Nov 2022}
+\begin{itemize}[noitemsep]
+    \item Forged strong relationships with safety experts and collaborated to create Tableau dashboards for monitoring safety statistics.
+    \item Replaced Excel tasks with comprehensive reporting pipeline in Python; over 15 xlsxwriter reports to save 30 man-hours/month.
+    \item Templating 12 monthly PowerPoint's with the python-pptx library and saving 40 man-hours/month of presentation prep.
+\end{itemize}
+
+\subsection*{\textbf{TUI Airways - Engineering Safety Analyst} \hfill  Aug 2018 - Sept 2021}
+\begin{itemize}[noitemsep]
+    \item Excel dashboarding to monitor active high risk safety occurrences and trends of maintenance incidents across engineering.
+    \item Investigated over 1000 engineering occurrences, generating root cause analysis and instituting preventative measures.
+    \item Chairing the monthly Engineering Safety Action Group to communicate and manage top risks with senior management.
+\end{itemize}
+
+\section*{Blog and Projects}
+\vspace{-2.5mm}
+
+\subsection*{\textbf{Blog Website URL}: \url{https://filiplivancic.com/} \hfill  May 2022 – Present}
+\begin{itemize}[noitemsep]
+  \item Comprehensive Chess Data Engineering using GCP: GCS, Compute Engine, Cloud Run(Python, Dash), Pub/Sub, Logging, dbt and BigQuery. 
+      \subitem Github Link: \url{https://github.com/Filpill/chess_analysis} 
+\vspace{1.5mm}
+    \item Maintaining a Hugo-based blog, and sharing insights on various data skills.
+    \item Enhancing data skills using Cloud Tools, Python, Linux, and public APIs.
+\end{itemize}
+
+\section*{Education}
+\vspace{-2.5mm}
+\subsubsection*{\textbf {City, University of London | Aeronautical Engineering (MEng)} | Grade: First Class Honours   \hfill \textbf{Oct 2014 - Jul 2018}}\FloatBarrier
+
+\vspace{-1mm}
+
+\subsubsection*{\textbf{St Gregory’s RC Science College} | A Level's: Physics (A), Maths (B), Further Maths (B), Chemistry (C)  \hfill  \textbf{Sep 2007 – Jul 2014}}
+
+\vspace{3.5mm}
+{\titlerule[1.0pt]}
+
+\pagenumbering{gobble}
+\date{}
+
+\end{document}

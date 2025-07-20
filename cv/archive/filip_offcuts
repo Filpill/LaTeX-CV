@@ -1,3 +1,6 @@
+%55/FIFTY FIVE
+%\item Deployed several pipelines with the 55 propietary "Launchpad" tool: A Python/Jupyter pipeline executor running docker containers in Compute Engine (VM), applying BigQuery SQL transformations using the google-api-python-client.
+
 %SKY
 %\item Migrating reporting solutions from legacy data systems onto BigQuery and Tableau infrastructure in addition to adding enhancements. Data quality is thoroughly tested to maintain consistency with previous reporting solutions.
 %\item Developing SQL versioning system using INFORMATION\_SCHEMA and running daily batch to detect new or updated Stored Procedures in production environment and storing changes in table as Type 2 Slowly Changed Dimensions.
