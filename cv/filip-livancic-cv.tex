@@ -64,7 +64,7 @@
 \renewcommand{\arraystretch}{1.2}
 \begin{tabular}{@{} l p{16cm} @{}}
   \textbf{GCP Cloud} & Artifact Registry, BigQuery, Google Cloud Storage (GCS), Compute Engine, Cloud Scheduler, Cloud Run(Services/Functions), Pub/Sub, gcloud CLI (bq, gsutil), Log Router \\
-  \textbf{Data Engineering} & SQL, Python, Tableau, dbt, Git, Docker, Terraform, Jupyter, Linux(Arch, Debian), Shell(bash, zsh), Dash \\
+  \textbf{Data Engineering} & SQL, Python, Tableau, dbt, Git, Docker, Terraform, Jupyter, Linux(Arch, Debian), Shell(bash), Plotly Dash \\
 \end{tabular}
 \end{table}
 
@@ -108,9 +108,9 @@
 
 \subsection*{\textbf{End-to-End Chess Data Pipeline}: \hspace{0mm} \url{https://github.com/Filpill/chess_analysis} \hfill  Mar 2025 – Present}
 \begin{itemize}[noitemsep]
-  \item Built an end-to-end analytics pipeline with monthly API ingestion into GCS, data modeling in BigQuery, and interactive visualisations in Plotly Dash hosted on Cloud Run.
-  \item Leveraged Pub/Sub triggers to launch Compute Engine (VM) instances via Cloud Run, with automatic VM teardown upon workload completion.
-  \item Integrated GitHub Actions and Terraform to automate infrastructure updates on pull request merges.
+  \item Built an end-to-end analytics pipeline with monthly scheduled API ingestions into GCS bucket storage, data modeling in BigQuery, and interactive visualisations in Plotly Dash hosted as Cloud Run Application.
+  \item Packaged Cloud Run Services into Docker Images which leverage Pub/Sub triggers to launch Compute Engine (VM) instances to execute containerised workloads with automatic VM teardown upon completion.
+  \item Integrated GitHub Actions and Terraform to automate infrastructure updates (Buckets, Schedulers, Cloud Run Services, Sinks, Triggers, etc.) on pull request merges.
 \end{itemize}
 
 \section*{Education}
