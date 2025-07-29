@@ -76,7 +76,7 @@
     \item Built Python API ingestion pipeline for illness-related Google search trends and weather data history into GCS with subsquent loading into BigQuery; this supported a ML model predicting ideal marketing campaign timeframes for pharmaceutical client.
     \item Implemented an ELT process with Python into a GCP data warehouse (Cloud Logging/Monitoring included), modelled BigQuery data with dbt to analyse hospitality loyalty figures, tracking booking-to-stay conversion rates across hotel locations.
     \item Audited client's BigQuery project with 300+ tables, recommending cleanup of abandoned pipelines, reducing table count by 75\% and improving capacity for maintenance.
-    \item Patched GA4 pipeline to filter events into Log Sink and utilised Pub/Sub messaging to create triggers for timely pipeline executions; performed backfills to fix data quality for periods with missing web-traffic attributions.
+    \item Patched GA4 pipeline by utilising event filters and Pub/Sub messaging to create triggers for timely pipeline executions; performed backfills to fix data quality for periods with missing web-traffic attributions.
     \item Resolved dbt DAG failures caused by unexpected data source changes, troubleshooting SQL, communicating resolutions to clients and restoring sales analytics in Looker.
     \item Revised GitLab repositories by incorporating a CI/CD Terraform (IaC) workflow which updates GCP infrastructure and pipelines.
 \end{itemize}
