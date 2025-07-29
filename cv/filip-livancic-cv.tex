@@ -41,77 +41,80 @@
 \begin{document}
 \vspace*{-9.0mm}
 
-\section*{Filip Livancic}
-\vspace{-2.5mm}
+\begin{center}
+    {\LARGE \textbf{Filip Livancic}} \\[1mm]
+    \vspace{-0mm}
+    East Finchley, London \quad | \quad 
+    \href{mailto:filiplivancic@gmail.com}{filiplivancic@gmail.com} \quad | \quad 
+    +44 740 346 7511 \\
+    \href{https://github.com/Filpill/}{\faGithub\ Github} \quad | \quad 
+    \href{https://filiplivancic.com/}{\faGlobe\ Website} \quad | \quad 
+    \href{https://linkedin.com/in/filip-livancic/}{\faLinkedinSquare\ LinkedIn}
+\end{center}\vspace{-6.5mm}
 
-{\small
-\begin{itemize}[itemsep=0.0em]
-    \item[] \faMapO \hspace{1mm} \textbf{Location:} \hspace{0.2mm}East Finchley, London 
-        \hspace{55.5mm} \faGithub \hspace{2mm} \textbf{Github:} \hspace{2,5mm} \url{https://github.com/Filpill/}
-    \item[] \faEnvelope \hspace{1.6mm} \textbf{Email:} \hspace{3.5mm} \href{mailto:filiplivancic@gmail.com}{filiplivancic@gmail.com} 
-        \hspace{52.3mm} \faGlobe \hspace{2mm} \textbf{Website:} \hspace{1.2mm} \url{https://filiplivancic.com/}
-    \item[] \faPhone \hspace{2.2mm} \textbf{Mobile:} \hspace{1.5mm} +44 740 346 7511
-        \hspace{59.4mm} \faLinkedinSquare \hspace{2mm} \textbf{LinkedIn:} \hspace{0.5mm}\url{linkedin.com/in/filip-livancic/}
-\end{itemize}
-}
-
-\vspace{-4.5mm}
 \section*{Skills}
 \vspace{-7.5mm}
 
 \begin{table}[h!]
 \centering
 \renewcommand{\arraystretch}{1.2}
-\begin{tabular}{@{} l p{16cm} @{}}
-  \textbf{GCP Cloud} & Artifact Registry, BigQuery, Google Cloud Storage (GCS), Compute Engine, Cloud Scheduler, Cloud Run(Services/Functions), Pub/Sub, gcloud CLI (bq, gsutil), Log Router \\
-  \textbf{Data Engineering} & SQL, Python, Tableau, dbt, Git, Docker, Terraform, Jupyter, Linux(Arch, Debian), Shell(bash), Plotly Dash \\
+\begin{tabular}{@{} l p{17.2cm} @{}}
+  \textbf{GCP Engineering} & BigQuery, Google Cloud Storage (GCS), Compute Engine (VM), Cloud Run(Services/Functions), Pub/Sub\\
+  \textbf{Data Analytics} & SQL (dbt, BigQuery), Python (pandas, matplotlib, Plotly, Dash), Tableau\\
+  \textbf{DevOps Tools} & Git (Github, Gitlab), Docker, Terraform, Linux, CLI/Shell(bash), virtualenv(uv), vim\\
 \end{tabular}
 \end{table}
 
-\vspace{-6.5mm}
+\vspace{-7.5mm}
 
-%Work Experience
 \section*{Work Experience}
+\vspace{-2.5mm}
 
-\subsection*{\textbf{Fifty Five - Senior Data Engineer} \hfill  Sept 2024 - Mar 2025}
+\subsection*{\textbf{Fifty Five - Senior Data Engineer} \hfill  Sep 2024 - Mar 2025}
 \begin{itemize}[noitemsep]
-    \item Built a Python pipeline to ingest API data from Google search trends (illness-related) and weather data into BigQuery, supporting an ML model that optimised timing for pharmaceutical marketing campaigns.
-    \item Audited a BigQuery project with 300+ tables using INFORMATION\_SCHEMA, recommending cleanup of abandoned pipelines and reducing object count by 75\%.
-    \item Redesigned pipeline architecture from scheduled to event-driven (Pub/Sub) to handle late-arriving batch updates from Salesforce and GA4, preventing downstream data loss.
-    \item Resolved dbt DAG failures caused by unexpected data source changes, troubleshooting SQL, communicating fixes to clients and restoring downstream sales analytics in Looker.
+    \item Built Python API ingestion pipeline for search trends (illness-related) and weather data into GCS and subsquent loading into BigQuery which supported an ML model optimising timing for pharmaceutical marketing campaigns.
     \item Implemented an ELT process with Python and dbt, modelled data in BigQuery to analyse hospitality loyalty data, tracking booking-to-stay conversion rates across hotel locations.
+    \item Audited clients' BigQuery project with 300+ tables using INFORMATION\_SCHEMA, recommending cleanup of abandoned pipelines, reducing object count by 75\% and improving capacity for maintenance.
+    \item Patched GA4 pipeline to use event-driven (Pub/Sub) behavior to handle late-arriving data from Salesforce, preventing loss of web-traffic channel attribution data in downstream tables.
+    \item Resolved dbt DAG failures caused by unexpected data source changes, troubleshooting SQL, communicating resolutions to clients and restoring sales analytics in Looker.
+    \item Updated older GitLab repositories to incorporate CI/CD process to update GCP infrastructure/pipeline scripts with Terraform.
 \end{itemize}
 
-\subsection*{\textbf{Sky - Data Visualisation Engineer} \hfill  Dec 2022 - Sept 2024}
+\subsection*{\textbf{Sky - Data Visualisation Engineer} \hfill  Dec 2022 - Sep 2024}
 \begin{itemize}[noitemsep]
-    \item Developed a BigQuery–Tableau pipeline to monitor compensation journeys for broadband customers with speed issues, uncovering insights into customer behavior.
-    \item Analyzed broadband discount strategies to measure their impact on subscription acquisition and churn, assessing the effectiveness of new offers.
-    \item Collaborated with stakeholders to align data initiatives with business workflows, balancing customer experience and profitability goals.
-    \item Migrated SQL transformation logic from on-prem servers to GCP BigQuery, performing regression tests to ensure consistent data quality.
-    \item Mentored the data viz team on BigQuery SQL best practices and implemented shared staging pipelines to standardise and streamline multiple visualisation workflows.
+    \item Developed BigQuery data models within the semantic and presentation layers for a variety of projects to enable the visualiation team to produce analytics on: customers, product holdings, subscription flows, order flows and contract data.
+    \item Monitored aggregated view of customers with broadband speed issues in Tableau, measured the percentage of customers churning in response to inconviniences in different timeframes.
+    \item Analysed broadband discount strategies in Tableau and was successfully able to measure the effectiveness of offers contributing to subscription acquisitions and churn reduction.
+    \item Migrated SQL transformation scripts from on-prem servers to GCP BigQuery, complying with revised subscription and order data models, performing regression tests to ensure consistent data quality.
+    \item Mentored the data viz team on BigQuery SQL best practices and implemented shared staging pipelines to improve efficiency of visualisation workflows using shared metrics.
+    \item Prioritised ad-hoc requests for stakeholders, leveraged the gcloud CLI (bq, gsutil) to export data into GCS and maintaining agility.
 \end{itemize}
 
 \subsection*{\textbf{easyJet - Safety Data Analyst} \hfill  Nov 2021 - Nov 2022}
 \begin{itemize}[noitemsep]
     \item Collaborated with safety experts to develop Tableau dashboards tracking incident statistics across Flight, Engineering, Cabin, and Ground Operations, improving visibility of safety risks.
-    \item Automated Excel-based reporting with Python (pandas, matplotlib, xlsxwriter) to save 30 man-hours per month through burst-reporting pipeline solutions.
+    \item Automated manual reports with Python (pandas, matplotlib, xlsxwriter) by creating burst-reporting pipelines to save 30 man-hours per month. 
 \end{itemize}
 
-\subsection*{\textbf{TUI Airways - Engineering Safety Analyst} \hfill  Aug 2018 - Sept 2021}
+\subsection*{\textbf{TUI Airways - Engineering Safety Analyst} \hfill  Aug 2018 - Sep 2021}
 \begin{itemize}[noitemsep]
-  \item Creating monitoring systems for safety occurrences and trending incidents across Engineering \& Maintenance (E\&M).
+  \item Creating Python scripts (pandas, matplotlib) for analysing trending safety incidents across Engineering \& Maintenance (E\&M).
   \item Chaired the monthly Engineering Safety Action Group (ESAG), presenting safety trend analyses and ensuring senior management addressed risks to airworthiness and operational readiness.
 \end{itemize}
+\vspace{-5.5mm}
 
 \section*{Projects}
 \vspace{-2.5mm}
 
-\subsection*{\textbf{End-to-End Chess Data Pipeline}: \hspace{0mm} \url{https://github.com/Filpill/chess_analysis} \hfill  Mar 2025 – Present}
+\subsection*{\textbf{Chess Data Pipeline} | \url{https://github.com/Filpill/chess_analysis} \hfill  Mar 2025 – Present}
 \begin{itemize}[noitemsep]
-  \item Built an end-to-end analytics pipeline with monthly scheduled API ingestions into GCS bucket storage, data modeling in BigQuery, and interactive visualisations in Plotly Dash hosted as Cloud Run Application.
-  \item Packaged Cloud Run Services into Docker Images which leverage Pub/Sub triggers to launch Compute Engine (VM) instances to execute containerised workloads with automatic VM teardown upon completion.
-  \item Integrated GitHub Actions and Terraform to automate infrastructure updates (Buckets, Schedulers, Cloud Run Services, Sinks, Triggers, etc.) on pull request merges.
+  \item Ingested chess.com API data with Python (google.cloud, requests, logging), storing raw JSON in GCS Cloud Storage bucket.
+  \item Loaded data incrementally into BigQuery; modelled and tested data in dbt; orchestrated transform job with Airflow.
+  \item Created interactive visualisations in Plotly Dash (hosted on Cloud Run): analysed player performance and opening win-rates.
+  \item Produced Cloud Run Services which utilise Pub/Sub messages for triggering Compute Engines with automatic VM teardown.
+  \item Integrated GitHub Actions and Terraform for managing infrastructure (Buckets, Schedulers, Cloud Run, Sinks, Triggers, etc).
 \end{itemize}
+\vspace{-5.5mm}
 
 \section*{Education}
 \vspace{-3.5mm}
