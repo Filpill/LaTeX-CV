@@ -73,18 +73,19 @@
 
 \subsection*{\textbf{Fifty Five - Senior Data Engineer} \hfill  Sep 2024 - Mar 2025}
 \begin{itemize}[noitemsep]
+    \item Maintained and developed GCP architecture for clients which provides analytics around media and marketing insights.
     \item Built Python API ingestion pipeline for illness-related Google search trends and weather data history into GCS with subsequent loading into BigQuery; this supported a ML model predicting ideal marketing campaign time-frames for pharmaceutical client.
-    \item Implemented an ELT process with Python into a GCP data warehouse (Cloud Logging/Monitoring included), modelled BigQuery data with dbt to analyse hospitality loyalty figures, tracking booking-to-stay conversion rates across hotel locations.
-    \item Audited client's BigQuery project with 300+ tables, recommending cleanup of abandoned pipelines, reducing table count by 75\% and improving capacity for maintenance.
-    \item Patched GA4 pipeline by utilising event filters and Pub/Sub messaging to create triggers for timely pipeline executions; performed backfills to fix data quality for periods with missing web-traffic attributions.
-    \item Resolved dbt DAG failures caused by unexpected data source changes, troubleshooting SQL, communicating resolutions to clients and restoring sales analytics in Looker.
+    \item Implemented an ELT process with Python into a GCP data warehouse featuring Cloud Logging, modelled BigQuery data with dbt and SQL to analyse hospitality loyalty figures, tracking booking-to-stay conversion rates across hotel locations.
+    \item Audited client's BigQuery project with 300+ tables, recommending cleanup of abandoned pipelines, reducing table count by 75\% and resulting in improved capacity for maintenance.
+    \item Patched problematic GA4 pipeline for client by utilising event-driven logic in conjunction with Pub/Sub message triggers to accurately order pipeline sequencing; missing data was backfilled to re-populate affected periods.
+    \item Resolved dbt DAG failures caused by unexpected data source changes, troubleshooting SQL in BigQuery, communicating resolutions to clients, backfilling data and restoring sales analytics in Looker.
     \item Revised GitLab repositories by incorporating a CI/CD Terraform (IaC) workflow which updates GCP infrastructure and pipelines.
 \end{itemize}
 
 \subsection*{\textbf{Sky - Data Visualisation Engineer} \hfill  Dec 2022 - Sep 2024}
 \begin{itemize}[noitemsep]
     \item Developed BigQuery data models for numerous projects to enable the visualisation team to produce analytics on: customers, product holdings, technology types, subscription flows, order flows and contract data.
-    \item Monitored aggregated view of customers with broadband speed issues in Tableau, measured the percentage of customers churning in response to inconviniences in different timeframes.
+    \item Monitored aggregated view of customers with broadband speed issues in Tableau, measured the percentage of customers churning in response to inconveniences in different time-frames.
     \item Analysed broadband discount strategies in Tableau and was successfully able to measure the effectiveness of offers contributing to subscription acquisitions and churn reduction.
     \item Migrated SQL transformation scripts from dedicated servers to the GCP BigQuery data warehouse, implementing SQL best practices for readability, and performing regression tests to assure high data quality.
     \item Supported the implementation of common staging pipelines to optimise data processing volumes, resulting in a significant reduction of duplicate processing costs and creating a single source of truth.
@@ -99,8 +100,8 @@
 
 \subsection*{\textbf{TUI Airways - Engineering Safety Analyst} \hfill  Aug 2018 - Sep 2021}
 \begin{itemize}[noitemsep]
-  \item Creating Python scripts (pandas, matplotlib) for analysing trending safety incidents across Engineering \& Maintenance (E\&M).
   \item Chaired the monthly Engineering Safety Action Group (ESAG), presenting safety trend analyses and ensuring senior management addressed risks to airworthiness and operational readiness.
+  \item Creating Python scripts (pandas, matplotlib) for analysing trending safety incidents across Engineering \& Maintenance (E\&M).
 \end{itemize}
 \vspace{-4.5mm}
 
@@ -109,11 +110,11 @@
 
 \subsection*{\textbf{Chess Data Pipeline} | \url{https://github.com/Filpill/chess_analysis} \hfill  Mar 2025 – Present}
 \begin{itemize}[noitemsep]
-  \item Ingested chess.com API data with Python (requests, logging), storing raw JSON responses in GCS Cloud Storage bucket.
+  \item Leveraged GCP architecture and microservices to ingest chess.com API JSON data with Python (requests) into GCS buckets.
   \item Loaded data incrementally into BigQuery; modelled and tested data in dbt; orchestrated transform job with Airflow.
   \item Created interactive visualisations in Plotly Dash hosted on Cloud Run: analysed player performance and opening win-rates.
-  \item Containerised pipeline scripts and Cloud Run Services into Docker Images and pushed into Artifact Registry for production use.
-  \item Produced Cloud Run Services which utilise Pub/Sub messages for triggering Compute Engines with automatic VM teardown.
+  \item Developed parametrised bash scripts for Unix/Linux systems to auto-build Docker Images into Artifact Registry.
+  \item Produced Cloud Run Services which utilise Pub/Sub messages for triggering Compute Engines with automatic VM tear-down.
   \item Integrated GitHub Actions and Terraform for managing infrastructure (Buckets, Schedulers, Cloud Run, Sinks, Triggers, etc).
 \end{itemize}
 \vspace{-4.5mm}
