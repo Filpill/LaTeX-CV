@@ -39,7 +39,7 @@
 \date{}
 
 \begin{document}
-\vspace*{-7.0mm}
+\vspace*{-9.0mm}
 
 \begin{center}
     {\LARGE \textbf{Filip Livancic}} \\[1mm]
@@ -60,9 +60,9 @@
 \centering
 \renewcommand{\arraystretch}{1.2}
 \begin{tabular}{@{} l p{14.0cm} @{}}
-  \textbf{Google Cloud Platform} & BigQuery, Google Cloud Storage (GCS), Compute Engine, Cloud Run Functions, Pub/Sub\\
-  \textbf{Data Transformation} & SQL (dbt Core, BigQuery), Python (pandas, matplotlib, Plotly, Dash), Tableau\\
-  \textbf{DevOps Tools} & Docker, Git (Github, Gitlab), Terraform (IaC), Linux, CLI/Shell(bash), virtualenv(uv), vim\\
+  \textbf{Google Cloud Platform} & BigQuery, Google Cloud Storage (GCS), Compute Engine, Cloud Run Services, Pub/Sub\\
+  \textbf{Data Tools \& ETL} & SQL (dbt, BigQuery), Python (Pandas, Plotly, Dash, Flask, Folium, Airflow), Tableau\\
+  \textbf{DevOps Tools} & Docker, Git, Terraform (IaC), Claude Code, Linux, CLI/Shell(bash), virtualenv(uv), vim\\
 \end{tabular}
 \end{table}
 
@@ -77,10 +77,12 @@
     \item Built Python API ingestion pipeline for illness-related Google search trends and weather data history into GCS with subsequent loading into BigQuery; this supported a ML model predicting ideal marketing campaign time-frames for pharmaceutical client.
     \item Implemented an ELT process with Python into a GCP data warehouse featuring Cloud Logging, modelled BigQuery data with dbt and SQL to analyse hospitality loyalty figures, tracking booking-to-stay conversion rates across hotel locations.
     \item Audited client's BigQuery project with 300+ tables, recommending cleanup of abandoned pipelines, reducing table count by 75\% and resulting in improved capacity for maintenance.
-    \item Patched problematic GA4 pipeline for client by utilising event-driven logic in conjunction with Pub/Sub message triggers to accurately order pipeline sequencing; missing data was backfilled to re-populate affected periods.
-    \item Resolved dbt DAG failures caused by unexpected data source changes, troubleshooting SQL in BigQuery, communicating resolutions to clients, backfilling data and restoring sales analytics in Looker.
+    \item Patched problematic GA4 pipeline for client by utilising event-driven logic in conjunction with Pub/Sub message triggers to accurately order pipeline sequencing; backfilled data to re-populate affected periods.
+    \item Resolved dbt DAG failures caused by unexpected data source changes, troubleshooting Airflow and BigQuery, communicating resolutions to clients, backfilling data and restoring sales analytics in Looker.
     \item Revised GitLab repositories by incorporating a CI/CD Terraform (IaC) workflow which updates GCP infrastructure and pipelines.
 \end{itemize}
+
+\vspace{-3.5mm}
 
 \subsection*{\textbf{Sky - Data Visualisation Engineer} \hfill  Dec 2022 - Sep 2024}
 \begin{itemize}[noitemsep]
@@ -92,11 +94,15 @@
     \item Prioritised and triaged ad-hoc requests from stakeholders, created gcloud bash scripts (bq, gsutil) to export data into GCS buckets to stay agile whilst handling larger projects.
 \end{itemize}
 
+\vspace{-3.5mm}
+
 \subsection*{\textbf{easyJet - Safety Data Analyst} \hfill  Nov 2021 - Nov 2022}
 \begin{itemize}[noitemsep]
     \item Collaborated with safety experts to develop Tableau dashboards tracking incident statistics across Flight, Engineering, Cabin, and Ground Operations, improving visibility of safety risks.
     \item Automated manual reports with Python (pandas, matplotlib, xlsxwriter) by creating burst-reporting pipelines and saving 30 man-hours per month. 
 \end{itemize}
+
+\vspace{-3.5mm}
 
 \subsection*{\textbf{TUI Airways - Engineering Safety Analyst} \hfill  Aug 2018 - Sep 2021}
 \begin{itemize}[noitemsep]
@@ -108,15 +114,24 @@
 \section*{Projects}
 \vspace{-2.5mm}
 
-\subsection*{\textbf{Chess Data Pipeline} | \url{https://github.com/Filpill/chess_analysis} \hfill  Mar 2025 – Present}
+\subsection*{\textbf{Chess ETL Pipeline} | \href{https://github.com/Filpill/chess_analysis}{\faGithub\ Filpill/chess\_analysis}  \hfill  Mar 2025 – Jul 2025}
+
 \begin{itemize}[noitemsep]
-  \item Leveraged GCP architecture and microservices to ingest chess.com API JSON data with Python (requests) into GCS buckets.
-  \item Loaded data incrementally into BigQuery; modelled and tested data in dbt; orchestrated transform job with Airflow.
-  \item Created interactive visualisations in Plotly Dash hosted on Cloud Run: analysed player performance and opening win-rates.
-  \item Developed parametrised bash scripts for Unix/Linux systems to auto-build Docker Images into Artifact Registry.
-  \item Produced Cloud Run Services which utilise Pub/Sub messages for triggering Compute Engines with automatic VM tear-down.
-  \item Integrated GitHub Actions and Terraform for managing infrastructure (Buckets, Schedulers, Cloud Run, Sinks, Triggers, etc).
+  \item Ingested historical data monthly from the chess.com API using Python; landing in GCS and loaded incrementally into BigQuery.
+  \item Integrated GitHub Actions and Terraform for CI/CD deployment (Buckets, Schedulers, Cloud Run, Sinks, Triggers, etc).
+  \item Developed Cloud Run Services which use Pub/Sub messages triggers for launching VM Instances to run ETL jobs.
 \end{itemize}
+
+\vspace{-4.5mm}
+
+\subsection*{\textbf{Deadlock API Analytics Service} |  \href{https://deadlock-analytics-164941517977.europe-west2.run.app/}{\faDesktop\ Deadlock Application}   \hfill  Jan 2026 – Jan 2026}
+
+\begin{itemize}[noitemsep]
+  \item Built comprehensive analytics platform for Deadlock game statistics to measure extensive player statistics and match history.
+  \item Visualised data from the deadlock.api using Plotly and enabling an interactive view on key player performance metrics.
+  \item Constructed web app using Flask, packaged into Docker image and deployed service as a Cloud Run application.
+\end{itemize}
+
 \vspace{-4.5mm}
 
 \section*{Education}
